@@ -3,70 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LMS Portal</title>
+    <title>Session Details - LMS</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/colors/theme.css">
-    <script defer src="js/plugins/jquery-3.6.0.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script src="js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="logo">
-                <h2>edunet</h2>
+    <div class="sidebar">
+        <div class="logo">edunet <span>foundation</span></div>
+        <ul class="menu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#" class="active">Session Details</a></li>
+            <li><a href="#">Project Selection</a></li>
+            <li><a href="#">Offer Letter</a></li>
+            <li><a href="#">Download Certificate</a></li>
+            <li><a href="#">Report Template</a></li>
+            <li><a href="#">Self Attendance</a></li>
+            <li><a href="#">Study Material</a></li>
+            <li><a href="#">Assessment</a></li>
+            <li><a href="#">Session Recording</a></li>
+            <li><a href="#">Placement Readiness</a></li>
+            <li><a href="#">Run My Code</a></li>
+            <li><a href="#">Queries</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Session Details</h1>
+            <div class="user-info">
+                <img src="assets/images/user.png" alt="User Profile">
+                <span>ADIRA MANI CHANDANA</span>
             </div>
-            <ul class="menu">
-                <li><a href="#dashboard"><i class="fas fa-home"></i> Dashboard</a></li>
-                <li><a href="#session-details" class="active"><i class="fas fa-calendar-alt"></i> Session Details</a></li>
-                <li><a href="#project-selection"><i class="fas fa-tasks"></i> Project Selection</a></li>
-                <li><a href="#offer-letter"><i class="fas fa-file"></i> Offer Letter</a></li>
-                <li><a href="#certificate"><i class="fas fa-certificate"></i> Download Certificate</a></li>
-                <li><a href="#report-template"><i class="fas fa-file-alt"></i> Report Template</a></li>
-                <li><a href="#self-attendance"><i class="fas fa-user-check"></i> Self Attendance</a></li>
-                <li><a href="#study-material"><i class="fas fa-book"></i> Study Material</a></li>
-                <li><a href="#assessment"><i class="fas fa-edit"></i> Assessment</a></li>
-                <li><a href="#queries"><i class="fas fa-question-circle"></i> Queries</a></li>
-            </ul>
-        </aside>
+        </header>
 
-        <!-- Main Content -->
-        <main class="content">
-            <header>
-                <h1>Session Details</h1>
-                <div class="user-profile">
-                    <i class="fas fa-user-circle"></i> Adira Mani Chandana
-                </div>
-            </header>
-
-            <section class="session-table">
-                <h2>Scheduled Sessions</h2>
+        <div class="content">
+            <h2>Scheduled Sessions</h2>
+            <div class="table-controls">
                 <button>Excel</button>
                 <button>CSV</button>
                 <button>Copy</button>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Session Date</th>
-                            <th>Meeting Link</th>
-                            <th>Project Title/Session Detail</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>09 Jan 25</td>
-                            <td><button class="meeting-btn">Meeting Link</button></td>
-                            <td>Mentoring Session 3</td>
-                        </tr>
-                        <tr>
-                            <td>10 Jan 25</td>
-                            <td><button class="meeting-btn">Meeting Link</button></td>
-                            <td>Ask Me Anything Session 3</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
+                <input type="text" placeholder="Search...">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SESSION DATE</th>
+                        <th>MEETING LINK</th>
+                        <th>PROJECT TITLE/SESSION DETAIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09 Jan 25</td>
+                        <td><a href="#" class="meeting-link">Meeting Link</a></td>
+                        <td>Mentoring Session 3</td>
+                    </tr>
+                    <tr>
+                        <td>10 Jan 25</td>
+                        <td><a href="#" class="meeting-link">Meeting Link</a></td>
+                        <td>Ask Me Anything Session 3</td>
+                    </tr>
+                    <tr>
+                        <td>19 Dec 24</td>
+                        <td><a href="#" class="meeting-link">Meeting Link</a></td>
+                        <td>Mentoring Session 1</td>
+                    </tr>
+                    <tr>
+                        <td>20 Dec 24</td>
+                        <td><a href="#" class="meeting-link">Meeting Link</a></td>
+                        <td>Ask Me Anything Session 1</td>
+                    </tr>
+                    <tr>
+                        <td>26 Dec 24</td>
+                        <td><a href="#" class="meeting-link">Meeting Link</a></td>
+                        <td>Mentoring Session 2</td>
+                    </tr>
+                    <tr>
+                        <td>27 Dec 24</td>
+                        <td><a href="#" class="meeting-link">Meeting Link</a></td>
+                        <td>Ask Me Anything Session 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
