@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("LMS Portal Loaded");
+$(document).ready(function() {
+    $(".menu a").click(function() {
+        $(".menu a").removeClass("active");
+        $(this).addClass("active");
+    });
 
-    const menuItems = document.querySelectorAll('.sidebar ul li a');
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
-            menuItems.forEach(el => el.classList.remove('active'));
-            this.classList.add('active');
-        });
+    $("table").on("click", ".meeting-link", function(event) {
+        event.preventDefault();
+        alert("Meeting link clicked!");
     });
 });
