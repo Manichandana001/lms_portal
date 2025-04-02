@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1A1B29;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu a.active {
+    color: #655DFE;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #F9F9FC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.table-controls {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.meeting-link {
+    background: #655DFE;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
