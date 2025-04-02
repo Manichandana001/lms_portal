@@ -1,0 +1,12 @@
+.sidebar {
+    background-color: #1e1e2f;
+}
+
+.sidebar ul li a {
+    color: #c3c3e6;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #3a3a7a;
+}
