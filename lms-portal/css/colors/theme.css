@@ -1,12 +1,22 @@
-.sidebar {
-    background-color: #1e1e2f;
+:root {
+    --primary-bg: #1A1B29;
+    --secondary-bg: #F9F9FC;
+    --text-color: #333;
+    --active-color: #655DFE;
+    --button-bg: #655DFE;
+    --button-text: white;
 }
 
-.sidebar ul li a {
-    color: #c3c3e6;
+body {
+    background: var(--secondary-bg);
+    color: var(--text-color);
 }
 
-.sidebar ul li a:hover,
-.sidebar ul li a.active {
-    background-color: #3a3a7a;
+.menu a.active {
+    color: var(--active-color);
+}
+
+.meeting-link {
+    background: var(--button-bg);
+    color: var(--button-text);
 }
