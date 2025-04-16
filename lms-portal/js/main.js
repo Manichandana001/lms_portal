@@ -1,11 +1,14 @@
-$(document).ready(function() {
-    $(".menu a").click(function() {
-        $(".menu a").removeClass("active");
-        $(this).addClass("active");
-    });
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    $("table").on("click", ".meeting-link", function(event) {
-        event.preventDefault();
-        alert("Meeting link clicked!");
-    });
+    // Dummy check - in real setup, validate with backend (PHP + MySQL).
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+
+    if(email && password) {
+        // Simulate successful login
+        window.location.href = 'dashboard.html';
+    } else {
+        alert('Please enter valid credentials.');
+    }
 });
